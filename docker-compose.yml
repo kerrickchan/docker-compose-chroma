@@ -1,0 +1,8 @@
+services:
+  chroma:
+    extends:
+      file: docker-compose-chroma.yml
+      service: chroma
+
+volumes:
+  chroma-data:
