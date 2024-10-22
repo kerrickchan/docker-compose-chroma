@@ -2,7 +2,7 @@ services:
   chroma:
     image: ghcr.io/chroma-core/chroma:latest
     volumes:
-      - chroma-data:/chroma/chroma
+      - chroma_data:/chroma/chroma
     ports:
       - "8000:8000"
     environment:
@@ -10,4 +10,4 @@ services:
       - ANONYMIZED_TELEMETRY=false
 
 volumes:
-  chroma-data:
+  chroma_data:
